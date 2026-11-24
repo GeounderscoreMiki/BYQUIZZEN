@@ -1,0 +1,113 @@
+{
+  "towns": {
+    "aabenraa": [
+      "Aabenraa",
+      "Rødekro",
+      "Padborg",
+      "Bov",
+      "Kollund",
+      "Kruså",
+      "Løjt Kirkeby",
+      "Hellevad"
+    ],
+    "billund": [
+      "Billund",
+      "Grindsted",
+      "Vorbasse",
+      "Sønder Omme",
+      "Filskov",
+      "Hejnsvig"
+    ],
+    "esbjerg": [
+      "Esbjerg",
+      "Ribe",
+      "Bramming",
+      "Tarp",
+      "Jerne",
+      "Hjerting",
+      "Gørding",
+      "Skads"
+    ],
+    "fanoe": [
+      "Nordby",
+      "Sønderho",
+      "Rindby",
+      "Fanø Bad"
+    ],
+    "fredericia": [
+      "Fredericia",
+      "Taulov",
+      "Erritsø",
+      "Egeskov",
+      "Bredstrup",
+      "Pjedsted",
+      "Snoghøj"
+    ],
+    "haderslev": [
+      "Haderslev",
+      "Vojens",
+      "Gram",
+      "Starup",
+      "Hjerndrup",
+      "Sommersted",
+      "Fjelstrup"
+    ],
+    "kolding": [
+      "Kolding",
+      "Christiansfeld",
+      "Lunderskov",
+      "Vamdrup",
+      "Sdr. Bjert",
+      "Agtrup",
+      "Hejls"
+    ],
+    "soenderborg": [
+      "Sønderborg",
+      "Augustenborg",
+      "Nordborg",
+      "Broager",
+      "Gråsten",
+      "Mommark",
+      "Havnbjerg"
+    ],
+    "toender": [
+      "Tønder",
+      "Skærbæk",
+      "Løgumkloster",
+      "Højer",
+      "Møgeltønder",
+      "Bredebro",
+      "Toftlund",
+      "Havneby"
+    ],
+    "varde": [
+      "Varde",
+      "Oksbøl",
+      "Blåvand",
+      "Ølgod",
+      "Tistrup",
+      "Janderup",
+      "Ansager",
+      "Outrup"
+    ],
+    "vejen": [
+      "Vejen",
+      "Brørup",
+      "Rødding",
+      "Holsted",
+      "Askov",
+      "Gesten",
+      "Jels",
+      "Skodborg"
+    ],
+    "vejle": [
+      "Vejle",
+      "Give",
+      "Jelling",
+      "Børkop",
+      "Egtved",
+      "Bredsten",
+      "Grejs"
+    ]
+  }
+}
