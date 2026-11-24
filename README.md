@@ -1,4 +1,4 @@
-# Geo_Miki – Hvor i Nordjylland? (og skabelon til resten af Danmark)
+# Geo_Miki præsenterer: Byquizzen (skabelon til geocaching-spil i hele Danmark)
 
 Én fælles spilmotor (`core/`) og én mappe pr. landsdel (`regions/<landsdel>/`). Det eksisterende spil *Hvor på Fyn?* er kun brugt som reference og er ikke ændret.
 
