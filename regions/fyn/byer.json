@@ -1,0 +1,101 @@
+{
+  "towns": {
+    "odense": [
+      "Odense",
+      "Dalum",
+      "Højby",
+      "Korup",
+      "Seden",
+      "Stige",
+      "Tarup",
+      "Bellinge",
+      "Fraugde",
+      "Allesø"
+    ],
+    "assens": [
+      "Assens",
+      "Haarby",
+      "Glamsbjerg",
+      "Tommerup",
+      "Vissenbjerg",
+      "Ebberup",
+      "Aarup"
+    ],
+    "faaborg": [
+      "Faaborg",
+      "Ringe",
+      "Broby",
+      "Årslev",
+      "Korinth",
+      "Horne",
+      "Millinge",
+      "Brahetrolleborg"
+    ],
+    "kerteminde": [
+      "Kerteminde",
+      "Munkebo",
+      "Langeskov",
+      "Rynkeby",
+      "Mesinge",
+      "Marslev",
+      "Martofte",
+      "Drigstrup"
+    ],
+    "langeland": [
+      "Rudkøbing",
+      "Tranekær",
+      "Humble",
+      "Bagenkop",
+      "Lohals",
+      "Simmerbølle",
+      "Ristinge"
+    ],
+    "middelfart": [
+      "Middelfart",
+      "Strib",
+      "Nørre Aaby",
+      "Brenderup",
+      "Harndrup",
+      "Gelsted",
+      "Føns"
+    ],
+    "nordfyns": [
+      "Bogense",
+      "Otterup",
+      "Søndersø",
+      "Skamby",
+      "Morud",
+      "Veflinge",
+      "Hårslev"
+    ],
+    "nyborg": [
+      "Nyborg",
+      "Ullerslev",
+      "Ørbæk",
+      "Refsvindinge",
+      "Aunslev",
+      "Frørup",
+      "Svindinge"
+    ],
+    "svendborg": [
+      "Svendborg",
+      "Troense",
+      "Thurø",
+      "Skårup",
+      "Ollerup",
+      "Kværndrup",
+      "Vester Skerninge",
+      "Gudme",
+      "Gudbjerg"
+    ],
+    "aeroe": [
+      "Ærøskøbing",
+      "Marstal",
+      "Søby",
+      "Ommel",
+      "Tranderup",
+      "Dunkær",
+      "Borgnæs"
+    ]
+  }
+}
