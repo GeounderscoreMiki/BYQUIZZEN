@@ -106,6 +106,9 @@ async function loadStats() {
     const d = await getDoc(doc(db, statsCol, 'counters'));
     const { attempts = 0, completed = 0 } = d.exists() ? d.data() : {};
     const pct = attempts ? Math.round((completed / attempts) * 1000) / 10 : 0;
+    $('stat-completed').textContent = completed;
+    $('stat-attempts').textContent = attempts;
+    $('stat-pct').textContent = `${String(pct).replace('.', ',')} %`;
     $('stats').textContent = `${attempts} spillere · ${completed} vindere · ${String(pct).replace('.', ',')} % gennemførelse`;
   } catch (e) { console.warn(e); }
 }
