@@ -1,0 +1,3 @@
+**/secret/*
+!**/secret/spil.example.json
+node_modules/

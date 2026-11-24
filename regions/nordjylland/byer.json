@@ -1,0 +1,128 @@
+{
+  "towns": {
+    "aalborg": [
+      "Aalborg",
+      "Nørresundby",
+      "Hals",
+      "Nibe",
+      "Svenstrup",
+      "Sulsted",
+      "Vodskov",
+      "Gistrup",
+      "Klarup",
+      "Storvorde",
+      "Gandrup",
+      "Vestbjerg",
+      "Frejlev",
+      "Skalborg",
+      "Vadum"
+    ],
+    "broenderslev": [
+      "Brønderslev",
+      "Dronninglund",
+      "Hjallerup",
+      "Asaa",
+      "Flauenskjold",
+      "Jerslev",
+      "Agersted",
+      "Serritslev",
+      "Øster Brønderslev"
+    ],
+    "frederikshavn": [
+      "Frederikshavn",
+      "Skagen",
+      "Sæby",
+      "Strandby",
+      "Ålbæk",
+      "Jerup",
+      "Østervrå",
+      "Dybvad",
+      "Elling",
+      "Understed",
+      "Lyngså"
+    ],
+    "hjoerring": [
+      "Hjørring",
+      "Sindal",
+      "Hirtshals",
+      "Løkken",
+      "Bindslev",
+      "Tårs",
+      "Vrå",
+      "Børglum",
+      "Lønstrup",
+      "Tornby",
+      "Tversted",
+      "Bjergby"
+    ],
+    "jammerbugt": [
+      "Aabybro",
+      "Brovst",
+      "Fjerritslev",
+      "Pandrup",
+      "Saltum",
+      "Blokhus",
+      "Hune",
+      "Birkelse",
+      "Slettestrand",
+      "Jetsmark"
+    ],
+    "laesoe": [
+      "Byrum",
+      "Vesterø Havn",
+      "Østerby Havn",
+      "Læsø"
+    ],
+    "mariagerfjord": [
+      "Hobro",
+      "Mariager",
+      "Hadsund",
+      "Havndal",
+      "Hvilsom",
+      "Rostrup",
+      "Visborg",
+      "Øster Hurup"
+    ],
+    "morsoe": [
+      "Nykøbing Mors",
+      "Redsted",
+      "Sundby",
+      "Karby",
+      "Nees",
+      "Øster Assels",
+      "Vils"
+    ],
+    "rebild": [
+      "Støvring",
+      "Skørping",
+      "Terndrup",
+      "Nørager",
+      "Suldrup",
+      "Arden",
+      "Haverslev"
+    ],
+    "thisted": [
+      "Thisted",
+      "Hanstholm",
+      "Hurup Thy",
+      "Snedsted",
+      "Nors",
+      "Sjørring",
+      "Koldby",
+      "Vestervig",
+      "Ræhr",
+      "Klitmøller"
+    ],
+    "vesthimmerland": [
+      "Løgstør",
+      "Aars",
+      "Farsø",
+      "Aalestrup",
+      "Gedsted",
+      "Ranum",
+      "Overlade",
+      "Vegger",
+      "Hornum"
+    ]
+  }
+}
