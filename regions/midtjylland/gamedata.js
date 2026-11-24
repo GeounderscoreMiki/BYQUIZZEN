@@ -1,6 +1,6 @@
 // Genereret af tools/build-game.mjs – rediger secret/spil.json og kør scriptet igen.
 export const iterations = 150000;
-export const salt = '3cCXXOCZLsUmCD1yG6k05A==';
+export const salt = 'j+AOB6d0zlHRwMjfsxx74g==';
 export const groups = [
   {
     "towns": [
@@ -9,15 +9,12 @@ export const groups = [
       "Brabrand",
       "Tilst",
       "Risskov",
-      "Egå",
       "Åbyhøj",
       "Beder",
       "Malling",
-      "Mårslet",
-      "Skæring",
-      "Skejby"
+      "Mårslet"
     ],
-    "check": "p81A41NPGNUyyHcsVk3tgvQP5kB4geyQ1pKegcVS8oI="
+    "check": "kTR4FLbRqtsKV0fyFqoE89yCq6zBKa2ePz6mCW2/kXA="
   },
   {
     "towns": [
@@ -28,7 +25,7 @@ export const groups = [
       "Ulstrup",
       "Laurbjerg"
     ],
-    "check": "t3WtRC+Np59lNDv9GuHVj66qNCXPKmZD1Zrmp2UQmd0="
+    "check": "1Ivq4jehA7y0he0nARv4KNHkPHI2M3zitHL3NFf1jZw="
   },
   {
     "towns": [
@@ -42,7 +39,7 @@ export const groups = [
       "Barrit",
       "Uldum"
     ],
-    "check": "UvTpjsYXQRyaKdardirwH4f9lcqZFk3/u811GWi3Fts="
+    "check": "TdXWswm/l9lALlfVIMlnF5iOHGkyBjD32pt4/PlBKSs="
   },
   {
     "towns": [
@@ -55,7 +52,7 @@ export const groups = [
       "Skarrild",
       "Haderup"
     ],
-    "check": "DqLgidAhiOdIw+V2sjzr3JL0LPROu0DlQGDJb0oeSlI="
+    "check": "/ck1Xt7SuSEr8krcbCf2PomO75MhRqcu+rYxLEekQow="
   },
   {
     "towns": [
@@ -67,7 +64,7 @@ export const groups = [
       "Måbjerg",
       "Nørre Felding"
     ],
-    "check": "AQFZHV5/f0TMOqDEW3/aNnD9itbAhfqwi7Uk6bVGYUM="
+    "check": "0aJKhZTjHPx3cwz9WLTq/fBOfpcktSNsJ+kCIOpt6H8="
   },
   {
     "towns": [
@@ -79,7 +76,7 @@ export const groups = [
       "Stensballe",
       "Lund"
     ],
-    "check": "0zbMLbf/LmQdNCISu15M3shc4JfRflMr1aEbvD1mxgA="
+    "check": "0gEvhFmE7HkzNWon6f2GwqR24c9hzThdB8Xl8hDXQLw="
   },
   {
     "towns": [
@@ -91,7 +88,7 @@ export const groups = [
       "Stakroge",
       "Ejstrupholm"
     ],
-    "check": "5yqGe93DuQr5A4rUnQxICtG+k24MRBnJeA1oDai6oq8="
+    "check": "xbit/lg0jS9xr2znLstggEm4o+UNcDdGkQrtSM3GXbA="
   },
   {
     "towns": [
@@ -103,7 +100,7 @@ export const groups = [
       "Fjaltring",
       "Ramme"
     ],
-    "check": "RplT25UX10S/t3YdJzFM5JVit7L9Jb3T3uFn3U+T5to="
+    "check": "SZJZsuDlgWm8p8q+Z3Azm13MbMxg/oxBcjANgl34wR4="
   },
   {
     "towns": [
@@ -115,7 +112,7 @@ export const groups = [
       "Fjellerup",
       "Gjerrild"
     ],
-    "check": "jOpcaxDV82b1+d0w1bOE8nrqlKWvOA4XlRrgBY3nZZE="
+    "check": "/DjefB4qEFKOFqU1UFnTew2eh4/i1pXnDdROofUPXuY="
   },
   {
     "towns": [
@@ -126,7 +123,7 @@ export const groups = [
       "Ørting",
       "Fruering"
     ],
-    "check": "Bg/dSx4rSYV3h4hrV0F0Y+13y/Y9h/Bu7U7XYuqEeSM="
+    "check": "tYuZ78O2PEvdw1vGIL+Qnyn5Izhpa+Bw5zXOPeLmXDg="
   },
   {
     "towns": [
@@ -137,7 +134,7 @@ export const groups = [
       "Dronningborg",
       "Hornbæk"
     ],
-    "check": "wpvgabRmfzDL2fQKifhU0G37EYnMiVwULSGeVHIhc5M="
+    "check": "xp6E+iGYSy81Mx8OEy96876tpmhn8jp/0fvGR0QJvYg="
   },
   {
     "towns": [
@@ -151,7 +148,7 @@ export const groups = [
       "Stadil",
       "Borris"
     ],
-    "check": "hY/kr9vruBLX797wArjkI7CrZTSFcA6GOwdvCX1I1H8="
+    "check": "qzxO2b5ISsUUcD4IINEGUXFbzEPWYy1736E4BrPoGvo="
   },
   {
     "towns": [
@@ -163,7 +160,7 @@ export const groups = [
       "Langemark",
       "Besser"
     ],
-    "check": "O//c3RgbZkfFfgEP8cAl0YBRmxaY/ocpWmqtjyc/yrU="
+    "check": "C6PXHItdY6QmBv5R8jQYJ9J+UDhPmo3wmx7LjD+eYPE="
   },
   {
     "towns": [
@@ -175,7 +172,7 @@ export const groups = [
       "Gjessø",
       "Funder"
     ],
-    "check": "xsHJYahIIBvtuVor4NO5P2Jwg/SHDi6HQnBNytMThb4="
+    "check": "B05t6uOkS8VvM5OcfRvQROENsluzkkT/Enb8pDKsIdY="
   },
   {
     "towns": [
@@ -187,7 +184,7 @@ export const groups = [
       "Stilling",
       "Tebstrup"
     ],
-    "check": "/r8SYOZqaVUsUKT306MKl5mi/KqmiavArQwFDkXlrKI="
+    "check": "HdiTHh3knzzOH5k2MsbvG10QV85HXpSJegbHtDAzZUU="
   },
   {
     "towns": [
@@ -200,7 +197,7 @@ export const groups = [
       "Højslev",
       "Rødding"
     ],
-    "check": "6y6Fde/ghs9f1q/+RJa9M/Wg+9b8PCRyWiGnVXVU804="
+    "check": "99mOS2kEjEotZh0S2O0gAHdWNV1VOV/7ZsQuYmu8mOk="
   },
   {
     "towns": [
@@ -211,7 +208,7 @@ export const groups = [
       "Hjerm",
       "Odby"
     ],
-    "check": "m+LvD623f+nIILMN4Sw8nRalk0c4+Uu0vTj5wqPslMI="
+    "check": "uzED2qKsGq/hS0s6qpwcFE/AAxj1EpicZ93oryPqm9Y="
   },
   {
     "towns": [
@@ -224,7 +221,7 @@ export const groups = [
       "Thorsager",
       "Knebel"
     ],
-    "check": "GgFzXSygLzC71Qf+jvpBwk7Rx7Vo5Qc1O086uemdTJ8="
+    "check": "aWGnliRZnKqeVfhtSiJNvFaM5iIrrGZhVFAvW5JNdhI="
   },
   {
     "towns": [
@@ -237,7 +234,7 @@ export const groups = [
       "Karup",
       "Løgstrup"
     ],
-    "check": "f2agrz18A0fpCd+R+xNHSBaG/WRxZzUjb8wRe5yGe7c="
+    "check": "MdtfI2BWoPfg95SHwSojBm2IUBl2a5a/wdPY0w9ChwM="
   }
 ];
-export const vault = { iv: 'KgTFd/2UavoD7d9l', data: 'tU7aAoMx9k46V8JZ+hfSxE9v18tEmkl/S9aJ/pmb6lMxMdzQ5s1q9hRammwq/p0igmUy6i0KLMBy1IXg+wX+8orxIhN+RH75HvlNUtfUT2kd' };
+export const vault = { iv: 'dvyapUPOEP0wtxKL', data: 'PT8vXtfiDy0028x08aPCltYKfgCVxW0mF1nwTqFnzQIdlnJSVbliF7BbavjPCNPAenZ12+BQDsRUqs9zGwhRD3V3CsGmnrNNUZUDp9oWnWRn' };
