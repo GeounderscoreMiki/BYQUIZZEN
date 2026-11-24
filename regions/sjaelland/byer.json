@@ -1,0 +1,21 @@
+{
+  "towns": {
+    "faxe": ["Haslev", "Faxe", "Faxe Ladeplads", "Rønnede", "Karise", "Dalby"],
+    "greve": ["Greve", "Hundige", "Karlslunde", "Kildebrønde", "Tune", "Mosede"],
+    "guldborgsund": ["Nykøbing Falster", "Nørre Alslev", "Stubbekøbing", "Sakskøbing", "Gedser", "Væggerløse", "Eskilstrup"],
+    "holbaek": ["Holbæk", "Tølløse", "Jyderup", "Regstrup", "Mørkøv", "Vipperød", "Tuse"],
+    "kalundborg": ["Kalundborg", "Svebølle", "Gørlev", "Høng", "Hvidebæk", "Bjergsted", "Store Fuglede"],
+    "koege": ["Køge", "Ejby", "Lellinge", "Vemmedrup", "Bjæverskov", "Herfølge", "Ølby"],
+    "lejre": ["Hvalsø", "Lejre", "Osted", "Gevninge", "Kirke Hyllinge", "Kirke Såby"],
+    "lolland": ["Maribo", "Nakskov", "Rødby", "Rødbyhavn", "Holeby", "Højreby", "Dannemare", "Søllested"],
+    "naestved": ["Næstved", "Fensmark", "Holme-Olstrup", "Karrebæksminde", "Rønnebæk", "Everdrup", "Herlufmagle"],
+    "odsherred": ["Nykøbing Sjælland", "Asnæs", "Fårevejle", "Vig", "Højby", "Rørvig", "Grevinge"],
+    "ringsted": ["Ringsted", "Benløse", "Fjenneslev", "Vetterslev", "Haraldsted", "Allerslev"],
+    "roskilde": ["Roskilde", "Viby Sjælland", "Gadstrup", "Jyllinge", "Ågerup", "Svogerslev", "Hedehusene", "Gundsømagle"],
+    "slagelse": ["Slagelse", "Korsør", "Skælskør", "Dalmose", "Vemmelev", "Hashøj", "Boeslunde", "Sørbymagle"],
+    "solroed": ["Solrød Strand", "Havdrup", "Karlstrup", "Jersie Strand", "Solrød"],
+    "soroe": ["Sorø", "Dianalund", "Stenlille", "Munke Bjergby", "Pedersborg", "Tystrup"],
+    "stevns": ["Store Heddinge", "Strøby", "Rødvig", "Hårlev", "Vallø Borgby", "Store Salby"],
+    "vordingborg": ["Vordingborg", "Stege", "Præstø", "Kalvehave", "Langebæk", "Nyråd", "Bogø By", "Mern"]
+  }
+}
