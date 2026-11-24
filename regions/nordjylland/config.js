@@ -33,7 +33,7 @@ export const theme = {
   emblem: '#cdeff5',
 };
 export const images = {
-  cover: null, // fx 'forside.png' i landsdelens mappe
+  cover: 'forside.png', // ligger i landsdelens mappe; mangler filen, vises logoet i stedet
   background: null, // fx 'baggrund.jpg' i landsdelens mappe
 };
 
