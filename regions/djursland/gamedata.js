@@ -1,62 +1,57 @@
 // Genereret af tools/build-game.mjs – rediger secret/spil.json og kør scriptet igen.
 export const iterations = 150000;
-export const salt = 'eBrJtvcbNOiPdwnyieCt6w==';
+export const salt = '9TyMtAH8ctK4zKemIgFn+w==';
 export const groups = [
   {
     "towns": [
       "Grenaa"
     ],
-    "check": "RhUrJHFlhGVgrKM0gdPio+JnTLVmbPKJ9GynAZCQ87I="
+    "check": "PdP5o+/Jh0xrdd4P2cSULaJ/fY65Oh+5DlHg6Uvsbtg="
   },
   {
     "towns": [
       "Bønnerup Strand",
-      "Gjerrild",
-      "Fjellerup"
+      "Fjellerup",
+      "Gjerrild"
     ],
-    "check": "OsH0l2gIu7A62kU+pFRI6Nq1+G8qY8/zTMt+UWF3SAY="
+    "check": "bglK4oKFtLnM7wfSUQT6g2buyBTjOQUyyF9HpXAXxA8="
   },
   {
     "towns": [
-      "Allingåbro",
-      "Glesborg"
+      "Allingåbro"
     ],
-    "check": "h0Yu/YpZFt/ytLKvOzbx90DPmT5Q8s30b8VwZjBrh5s="
+    "check": "5G/Eed2s75bwyCNklqJ1g//d2+vPF70Pu75fg5jxi40="
   },
   {
     "towns": [
-      "Auning",
-      "Ørsted"
+      "Auning"
     ],
-    "check": "typegPdOhdEQYkZRkca6R9OoPXGuVj8IxUgZArU/TZ0="
+    "check": "2c1HaRTZjCzMwC80cea5MfJJvU4HHuu8bT/nQRV3WCo="
   },
   {
     "towns": [
       "Ebeltoft",
       "Femmøller"
     ],
-    "check": "T/OCa3YKtiAkWsFTIdCsRIu6GGSbW28jF/Hztz51vTY="
+    "check": "deK8Fp5ajCTLuxQE0aZdnPp2+ucfGQtmOjA1tOPBewI="
   },
   {
     "towns": [
-      "Ryomgård",
-      "Kolind"
+      "Ryomgård"
     ],
-    "check": "uH4QrsP119rVVHCpZn7Cn1cer/3m9ZiFPVE9IpM49us="
+    "check": "DtGblY6ai4tq5Xm6KQKPHhUjTCXXU5JEnEIu0BptDP0="
   },
   {
     "towns": [
-      "Hornslet",
-      "Mørke"
+      "Hornslet"
     ],
-    "check": "0emULds6VIajg7aySixfMxhWqca2MlOcMLoN6XdX5XE="
+    "check": "W7Y0+JS3lEgh3Pr9WB1o4cvo133Dg0JdOco4O3siuxE="
   },
   {
     "towns": [
-      "Rønde",
-      "Knebel"
+      "Rønde"
     ],
-    "check": "TGTLD6Bybk1xBJjyRVCjoxWJFhjOaWo1USu8KG1au8M="
+    "check": "MKYXctna5qokng162eOC+N6RwAtjVxpHJzwXNE62IFo="
   }
 ];
-export const vault = { iv: 'g10kmdy3ooqjXPFQ', data: 'kvacG+KytAwDvmzbPAL01mrd+4Z/0r2e3kvZfTdi8N73ODDNN54mtI1cUrbWLwwZiooaATIQL5dLEIXRIOW9rCAqn8k8aF3CHyjFQQ2ft+RK' };
+export const vault = { iv: '70r7w5Pfk/hlgvIQ', data: 'itLCcdj5d7FhfEROTN31vzNaZv5ULM87mnYqIVsjh4UlYxtZs5j9CT6YK9Y2XiZRtl9O4HIXPjX7g0ODG43dwsexZNhxnSyJpfH8Yz6dBjmA' };
