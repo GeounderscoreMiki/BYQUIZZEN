@@ -11,7 +11,9 @@
   <main>
     <div class="card">
       <h1>Geo_Miki præsenterer: Byquizzen</h1>
-      <p>Vælg landsdel:</p>
+      <p>Tryk på din landsdel på kortet:</p>
+      <svg id="dkmap" class="dkmap" role="group" aria-label="Danmarkskort over landsdele"></svg>
+      <p>Eller vælg her:</p>
       <ul>
         <li><a href="https://geounderscoremiki.github.io/HvorPaaFyn/">Hvor på Fyn?</a></li>
         <li><a href="regions/fyn/">Hvor på Fyn? (ny version med statistik)</a></li>
@@ -28,5 +30,30 @@
       </ul>
     </div>
   </main>
+  <style>
+    .dkmap { width: 100%; height: auto; display: block; margin: 8px 0 16px; }
+    .dkmap path { stroke: #fff; stroke-width: 1.5; stroke-linejoin: round; transition: opacity .15s; }
+    .dkmap a:hover path, .dkmap a:focus path { opacity: .7; }
+    .dkmap text { font: 700 17px system-ui, sans-serif; fill: #fff; stroke: #000; stroke-width: 3.5px; paint-order: stroke; text-anchor: middle; pointer-events: none; }
+  </style>
+  <script type="module">
+    import { denmarkView, denmarkGames } from './denmarkmap.js';
+    const NS = 'http://www.w3.org/2000/svg';
+    const svg = document.getElementById('dkmap');
+    svg.setAttribute('viewBox', `0 0 ${denmarkView.width} ${denmarkView.height}`);
+    const el = (name, attrs, parent) => {
+      const e = document.createElementNS(NS, name);
+      for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v);
+      parent.appendChild(e);
+      return e;
+    };
+    for (const g of denmarkGames) {
+      const a = el('a', { href: `regions/${g.slug}/` }, svg);
+      a.setAttribute('aria-label', g.title);
+      el('title', {}, a).textContent = g.title;
+      el('path', { d: g.d, fill: g.color, 'fill-rule': 'evenodd' }, a);
+    }
+    for (const g of denmarkGames) el('text', { x: g.lx, y: g.ly }, svg).textContent = g.name;
+  </script>
 </body>
 </html>
