@@ -1,62 +1,62 @@
 // Genereret af tools/build-game.mjs – rediger secret/spil.json og kør scriptet igen.
 export const iterations = 150000;
-export const salt = '3OTqcQXufjvQn318XEzvlQ==';
+export const salt = 'eBrJtvcbNOiPdwnyieCt6w==';
 export const groups = [
   {
     "towns": [
-      "Grenaa",
-      "Bønnerup Strand"
+      "Grenaa"
     ],
-    "check": "CI2UI/rXpWMvz9vZldQ+4JjqIYc9c168V5NIdAB8SEA="
+    "check": "RhUrJHFlhGVgrKM0gdPio+JnTLVmbPKJ9GynAZCQ87I="
   },
   {
     "towns": [
+      "Bønnerup Strand",
       "Gjerrild",
       "Fjellerup"
     ],
-    "check": "Jf775tlha4Ft1W29naAyy0t+4LfDN4L5fqaF7KTT19g="
+    "check": "OsH0l2gIu7A62kU+pFRI6Nq1+G8qY8/zTMt+UWF3SAY="
   },
   {
     "towns": [
       "Allingåbro",
       "Glesborg"
     ],
-    "check": "Cs95I3aw+KheGJu3metPY3S3dW75ytRSq0eoJNGtTdI="
+    "check": "h0Yu/YpZFt/ytLKvOzbx90DPmT5Q8s30b8VwZjBrh5s="
   },
   {
     "towns": [
       "Auning",
       "Ørsted"
     ],
-    "check": "kvnDs1IpvEwRz5qMq3uK1eflNVBBPwzhxV2hwjtAgtQ="
+    "check": "typegPdOhdEQYkZRkca6R9OoPXGuVj8IxUgZArU/TZ0="
   },
   {
     "towns": [
       "Ebeltoft",
       "Femmøller"
     ],
-    "check": "6sR1fWh4IHsc4KREhpOGEbRuo32lHCkRm4d8klx4/g4="
+    "check": "T/OCa3YKtiAkWsFTIdCsRIu6GGSbW28jF/Hztz51vTY="
   },
   {
     "towns": [
       "Ryomgård",
       "Kolind"
     ],
-    "check": "fbrkdhiMB2+oUlu3huk6FuQG44wLW6+LLIchKb0lc6A="
+    "check": "uH4QrsP119rVVHCpZn7Cn1cer/3m9ZiFPVE9IpM49us="
   },
   {
     "towns": [
       "Hornslet",
       "Mørke"
     ],
-    "check": "csDIjMzkBtPcIUXVEyC3KWcqXJBPOY3rU8ZHokVcUpI="
+    "check": "0emULds6VIajg7aySixfMxhWqca2MlOcMLoN6XdX5XE="
   },
   {
     "towns": [
       "Rønde",
       "Knebel"
     ],
-    "check": "l69yon3HEEGDagLIqdQQxGYw4X6ACfxx5CuQcWbY8Qs="
+    "check": "TGTLD6Bybk1xBJjyRVCjoxWJFhjOaWo1USu8KG1au8M="
   }
 ];
-export const vault = { iv: 'xb0EK/8jn8pnfxKf', data: 'bW7uunh2NAFQ2julYIoN5vzmUsIPEc4XCHnSNFle4DDHlP/QCSMUXR3//e0lAaFgoqH0HjjfzN4zp4GTZuuyz2yw3aeC65nIMZynFGXPgL2L' };
+export const vault = { iv: 'g10kmdy3ooqjXPFQ', data: 'kvacG+KytAwDvmzbPAL01mrd+4Z/0r2e3kvZfTdi8N73ODDNN54mtI1cUrbWLwwZiooaATIQL5dLEIXRIOW9rCAqn8k8aF3CHyjFQQ2ft+RK' };
