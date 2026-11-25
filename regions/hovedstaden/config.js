@@ -10,11 +10,11 @@ export const firebaseConfig = {
 // Identitet og tekster
 export const slug = 'hovedstaden';
 export const kicker = 'Geo_Miki præsenterer';
-export const title = "Hvor i Hovedstaden?";
-export const regionName = "Hovedstaden";
-export const regionPrep = "i Hovedstaden"; // bruges i sætninger: "tilfældig by i Nordjylland"
-export const tagline = "Kender du Hovedstadens byer og kommuner? Bevis det og find skatten. 🧭";
-export const mapLabel = "Kort over Hovedstadens kommuner";
+export const title = "Hvor i Storkøbenhavn?";
+export const regionName = "Storkøbenhavn";
+export const regionPrep = "i Storkøbenhavn"; // bruges i sætninger: "tilfældig by i Nordjylland"
+export const tagline = "Kender du Storkøbenhavns byer og kommuner? Bevis det og find skatten. 🧭";
+export const mapLabel = "Kort over Storkøbenhavns kommuner";
 
 // Egne Firebase-samlinger pr. landsdel (<prefix>_scores og <prefix>_stats), så resultater aldrig blandes.
 export const collectionPrefix = "hov";
