@@ -22,7 +22,7 @@ export const storageKey = "hovName";
 
 // Fælles spilleregler (kan overstyres pr. landsdel)
 export const questionSeconds = 60;
-export const maxLives = 15;
+export const maxLives = 10;
 
 // Design
 export const theme = {
