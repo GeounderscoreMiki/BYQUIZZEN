@@ -47,7 +47,6 @@ export const municipalities = [
   { id: 'horsens', name: 'Horsens', kode: '0615' },
   { id: 'ikast', name: 'Ikast-Brande', kode: '0756' },
   { id: 'lemvig', name: 'Lemvig', kode: '0665' },
-  { id: 'norddjurs', name: 'Norddjurs', kode: '0707' },
   { id: 'odder', name: 'Odder', kode: '0727' },
   { id: 'randers', name: 'Randers', kode: '0730' },
   { id: 'ringkoebing', name: 'Ringkøbing-Skjern', kode: '0760' },
@@ -56,6 +55,5 @@ export const municipalities = [
   { id: 'skanderborg', name: 'Skanderborg', kode: '0746' },
   { id: 'skive', name: 'Skive', kode: '0779' },
   { id: 'struer', name: 'Struer', kode: '0671' },
-  { id: 'syddjurs', name: 'Syddjurs', kode: '0706' },
   { id: 'viborg', name: 'Viborg', kode: '0791' },
 ];
