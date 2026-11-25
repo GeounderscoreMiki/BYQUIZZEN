@@ -7,13 +7,13 @@ const root = new URL('../', import.meta.url);
 const prefixes = [];
 for (const e of readdirSync(new URL('regions/', root), { withFileTypes: true })) {
   if (!e.isDirectory() || !existsSync(new URL(`regions/${e.name}/config.js`, root))) continue;
-  const { collectionPrefix, title } = await import(new URL(`regions/${e.name}/config.js`, root));
-  prefixes.push({ prefix: collectionPrefix, title, dir: e.name });
+  const { collectionPrefix, title, maxLives } = await import(new URL(`regions/${e.name}/config.js`, root));
+  prefixes.push({ prefix: collectionPrefix, title, dir: e.name, maxLives });
 }
 const dup = prefixes.find((p, i) => prefixes.findIndex((q) => q.prefix === p.prefix) !== i);
 if (dup) throw new Error(`collectionPrefix "${dup.prefix}" bruges af flere landsdele`);
 
-const block = (scores, stats, label) => `
+const block = (scores, stats, label, maxLives = 10) => `
     // ---- ${label} ----
     // Scoreboard: alle kan læse og tilføje en score, men ikke ændre eller slette.
     match /${scores}/{id} {
@@ -21,7 +21,7 @@ const block = (scores, stats, label) => `
       allow create: if request.resource.data.keys().hasOnly(['name', 'seconds', 'lives', 'createdAt'])
         && request.resource.data.lives is int
         && request.resource.data.lives >= 1
-        && request.resource.data.lives <= 10
+        && request.resource.data.lives <= ${maxLives}
         && request.resource.data.name is string
         && request.resource.data.name.size() >= 1
         && request.resource.data.name.size() <= 20
@@ -46,7 +46,7 @@ const block = (scores, stats, label) => `
 const out = `rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-${prefixes.map((p) => block(`${p.prefix}_scores`, `${p.prefix}_stats`, p.title)).join('')}${block('hpf_scores', 'hpf_stats', 'Hvor på Fyn? (eksisterende – uændret)')}${block('scores', 'stats', 'Fynsspil (eksisterende – uændret)')}  }
+${prefixes.map((p) => block(`${p.prefix}_scores`, `${p.prefix}_stats`, p.title, p.maxLives)).join('')}${block('hpf_scores', 'hpf_stats', 'Hvor på Fyn? (eksisterende – uændret)')}${block('scores', 'stats', 'Fynsspil (eksisterende – uændret)')}  }
 }
 `;
 writeFileSync(new URL('firestore.rules', root), out);

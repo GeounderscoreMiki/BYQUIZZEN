@@ -17,7 +17,7 @@ data/kommuner.geojson       DAGI-kommunegrænser (ok-dk/dagi)
 ```
 
 ## Regler (fælles)
-60 sek. pr. spørgsmål · 10 liv · forkert svar/tidsudløb = −1 liv og nulstiller stimen · én rigtig by fra hver kommune · samlet timer · finalkoordinat vises først ved sejr · scoreboard (navn, tid, liv, dato, klokkeslæt) · statistik (spillere, vindere, gennemførelsesprocent). Tid og liv kan ændres i `config.js`, men `firestore.rules` tillader pt. 1–10 liv.
+60 sek. pr. spørgsmål · 10 liv · forkert svar/tidsudløb = −1 liv og nulstiller stimen · én rigtig by fra hver kommune · samlet timer · finalkoordinat vises først ved sejr · scoreboard (navn, tid, liv, dato, klokkeslæt) · statistik (spillere, vindere, gennemførelsesprocent). Tid og liv kan ændres pr. landsdel i `config.js` (Hovedstaden har 15 liv); kør derefter `node tools/build-rules.mjs` og udgiv `firestore.rules` igen.
 
 ## Opsætning af Hvor i Nordjylland?
 1. Ret `finalCoordinate` i `regions/nordjylland/secret/spil.json` (nu en pladsholder).
