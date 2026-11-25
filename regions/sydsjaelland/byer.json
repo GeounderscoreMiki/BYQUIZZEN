@@ -1,0 +1,58 @@
+{
+  "towns": {
+    "naestved": [
+      "Næstved",
+      "Fensmark",
+      "Holme-Olstrup",
+      "Karrebæksminde",
+      "Rønnebæk",
+      "Everdrup",
+      "Herlufmagle"
+    ],
+    "vordingborg": [
+      "Vordingborg",
+      "Stege",
+      "Præstø",
+      "Kalvehave",
+      "Langebæk",
+      "Nyråd",
+      "Bogø By",
+      "Mern"
+    ],
+    "faxe": [
+      "Haslev",
+      "Faxe",
+      "Faxe Ladeplads",
+      "Rønnede",
+      "Karise",
+      "Dalby"
+    ],
+    "stevns": [
+      "Store Heddinge",
+      "Strøby",
+      "Rødvig",
+      "Hårlev",
+      "Vallø Borgby",
+      "Store Salby"
+    ],
+    "lolland": [
+      "Maribo",
+      "Nakskov",
+      "Rødby",
+      "Rødbyhavn",
+      "Holeby",
+      "Højreby",
+      "Dannemare",
+      "Søllested"
+    ],
+    "guldborgsund": [
+      "Nykøbing Falster",
+      "Nørre Alslev",
+      "Stubbekøbing",
+      "Sakskøbing",
+      "Gedser",
+      "Væggerløse",
+      "Eskilstrup"
+    ]
+  }
+}

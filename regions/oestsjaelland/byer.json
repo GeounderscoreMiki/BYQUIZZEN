@@ -1,0 +1,46 @@
+{
+  "towns": {
+    "roskilde": [
+      "Roskilde",
+      "Viby Sjælland",
+      "Gadstrup",
+      "Jyllinge",
+      "Ågerup",
+      "Svogerslev",
+      "Hedehusene",
+      "Gundsømagle"
+    ],
+    "lejre": [
+      "Hvalsø",
+      "Lejre",
+      "Osted",
+      "Gevninge",
+      "Kirke Hyllinge",
+      "Kirke Såby"
+    ],
+    "koege": [
+      "Køge",
+      "Ejby",
+      "Lellinge",
+      "Vemmedrup",
+      "Bjæverskov",
+      "Herfølge",
+      "Ølby"
+    ],
+    "greve": [
+      "Greve",
+      "Hundige",
+      "Karlslunde",
+      "Kildebrønde",
+      "Tune",
+      "Mosede"
+    ],
+    "solroed": [
+      "Solrød Strand",
+      "Havdrup",
+      "Karlstrup",
+      "Jersie Strand",
+      "Solrød"
+    ]
+  }
+}

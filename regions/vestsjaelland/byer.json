@@ -1,0 +1,57 @@
+{
+  "towns": {
+    "kalundborg": [
+      "Kalundborg",
+      "Svebølle",
+      "Gørlev",
+      "Høng",
+      "Hvidebæk",
+      "Bjergsted",
+      "Store Fuglede"
+    ],
+    "holbaek": [
+      "Holbæk",
+      "Tølløse",
+      "Jyderup",
+      "Regstrup",
+      "Mørkøv",
+      "Vipperød",
+      "Tuse"
+    ],
+    "odsherred": [
+      "Nykøbing Sjælland",
+      "Asnæs",
+      "Fårevejle",
+      "Vig",
+      "Højby",
+      "Rørvig",
+      "Grevinge"
+    ],
+    "slagelse": [
+      "Slagelse",
+      "Korsør",
+      "Skælskør",
+      "Dalmose",
+      "Vemmelev",
+      "Hashøj",
+      "Boeslunde",
+      "Sørbymagle"
+    ],
+    "soroe": [
+      "Sorø",
+      "Dianalund",
+      "Stenlille",
+      "Munke Bjergby",
+      "Pedersborg",
+      "Tystrup"
+    ],
+    "ringsted": [
+      "Ringsted",
+      "Benløse",
+      "Fjenneslev",
+      "Vetterslev",
+      "Haraldsted",
+      "Allerslev"
+    ]
+  }
+}

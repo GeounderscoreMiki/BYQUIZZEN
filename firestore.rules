@@ -114,9 +114,9 @@ service cloud.firestore {
         && request.resource.data.get('completed', 0) - resource.data.get('completed', 0) in [0, 1];
     }
 
-    // ---- Hvor på Sjælland? ----
+    // ---- Hvor i Østsjælland? ----
     // Scoreboard: alle kan læse og tilføje en score, men ikke ændre eller slette.
-    match /sjl_scores/{id} {
+    match /osj_scores/{id} {
       allow read: if true;
       allow create: if request.resource.data.keys().hasOnly(['name', 'seconds', 'lives', 'createdAt'])
         && request.resource.data.lives is int
@@ -132,7 +132,7 @@ service cloud.firestore {
     }
 
     // Tæller: kan kun tælles op med 1 ad gangen (attempts = spillere, completed = vindere).
-    match /sjl_stats/counters {
+    match /osj_stats/counters {
       allow read: if true;
       allow create: if request.resource.data.keys().hasOnly(['attempts', 'completed'])
         && request.resource.data.get('attempts', 0) <= 1
@@ -161,6 +161,62 @@ service cloud.firestore {
 
     // Tæller: kan kun tælles op med 1 ad gangen (attempts = spillere, completed = vindere).
     match /sdj_stats/counters {
+      allow read: if true;
+      allow create: if request.resource.data.keys().hasOnly(['attempts', 'completed'])
+        && request.resource.data.get('attempts', 0) <= 1
+        && request.resource.data.get('completed', 0) <= 1;
+      allow update: if request.resource.data.keys().hasOnly(['attempts', 'completed'])
+        && request.resource.data.get('attempts', 0) - resource.data.get('attempts', 0) in [0, 1]
+        && request.resource.data.get('completed', 0) - resource.data.get('completed', 0) in [0, 1];
+    }
+
+    // ---- Hvor i Sydsjælland, på Lolland og Falster? ----
+    // Scoreboard: alle kan læse og tilføje en score, men ikke ændre eller slette.
+    match /ssj_scores/{id} {
+      allow read: if true;
+      allow create: if request.resource.data.keys().hasOnly(['name', 'seconds', 'lives', 'createdAt'])
+        && request.resource.data.lives is int
+        && request.resource.data.lives >= 1
+        && request.resource.data.lives <= 10
+        && request.resource.data.name is string
+        && request.resource.data.name.size() >= 1
+        && request.resource.data.name.size() <= 20
+        && request.resource.data.seconds is int
+        && request.resource.data.seconds >= 20
+        && request.resource.data.seconds <= 86400;
+      allow update, delete: if false;
+    }
+
+    // Tæller: kan kun tælles op med 1 ad gangen (attempts = spillere, completed = vindere).
+    match /ssj_stats/counters {
+      allow read: if true;
+      allow create: if request.resource.data.keys().hasOnly(['attempts', 'completed'])
+        && request.resource.data.get('attempts', 0) <= 1
+        && request.resource.data.get('completed', 0) <= 1;
+      allow update: if request.resource.data.keys().hasOnly(['attempts', 'completed'])
+        && request.resource.data.get('attempts', 0) - resource.data.get('attempts', 0) in [0, 1]
+        && request.resource.data.get('completed', 0) - resource.data.get('completed', 0) in [0, 1];
+    }
+
+    // ---- Hvor i Vestsjælland? ----
+    // Scoreboard: alle kan læse og tilføje en score, men ikke ændre eller slette.
+    match /vsj_scores/{id} {
+      allow read: if true;
+      allow create: if request.resource.data.keys().hasOnly(['name', 'seconds', 'lives', 'createdAt'])
+        && request.resource.data.lives is int
+        && request.resource.data.lives >= 1
+        && request.resource.data.lives <= 10
+        && request.resource.data.name is string
+        && request.resource.data.name.size() >= 1
+        && request.resource.data.name.size() <= 20
+        && request.resource.data.seconds is int
+        && request.resource.data.seconds >= 20
+        && request.resource.data.seconds <= 86400;
+      allow update, delete: if false;
+    }
+
+    // Tæller: kan kun tælles op med 1 ad gangen (attempts = spillere, completed = vindere).
+    match /vsj_stats/counters {
       allow read: if true;
       allow create: if request.resource.data.keys().hasOnly(['attempts', 'completed'])
         && request.resource.data.get('attempts', 0) <= 1

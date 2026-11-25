@@ -27,7 +27,7 @@ data/kommuner.geojson       DAGI-kommunegrænser (ok-dk/dagi)
 
 ## Ny landsdel
 ```
-node tools/new-region.mjs sjaelland "Hvor på Sjælland?" "Sjælland" sj
+node tools/new-region.mjs vestsjaelland "Hvor i Vestsjælland?" "Vestsjælland" vsj
 ```
 Udfyld derefter `municipalities` i `config.js` (id, navn, DAGI-kommunekode), `byer.json` og `secret/spil.json`, evt. tema/billeder (`images.cover`, `images.background`), og kør `build-map`, `build-game` og `build-rules`. Hver landsdel har egen finalkoordinat og egne Firebase-samlinger (`<prefix>_scores`/`_stats`); `build-rules` afviser dublerede præfikser.
 
