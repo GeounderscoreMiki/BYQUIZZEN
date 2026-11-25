@@ -1,0 +1,98 @@
+{
+  "towns": {
+    "helsingoer": [
+      "Helsingør",
+      "Snekkersten",
+      "Espergærde",
+      "Hornbæk",
+      "Ålsgårde",
+      "Tikøb"
+    ],
+    "fredensborg": [
+      "Fredensborg",
+      "Humlebæk",
+      "Kokkedal",
+      "Nivå",
+      "Asminderød"
+    ],
+    "hilleroed": [
+      "Hillerød",
+      "Uvelse",
+      "Favrholm",
+      "Ny Hammersholt"
+    ],
+    "gribskov": [
+      "Helsinge",
+      "Gilleleje",
+      "Græsted",
+      "Smidstrup",
+      "Ramløse",
+      "Vejby",
+      "Tisvilde"
+    ],
+    "halsnaes": [
+      "Hundested",
+      "Frederiksværk",
+      "Liseleje",
+      "Melby",
+      "Halsnæs"
+    ],
+    "frederikssund": [
+      "Frederikssund",
+      "Jægerspris",
+      "Skibby",
+      "Skuldelev",
+      "Kyndby"
+    ],
+    "egedal": [
+      "Ølstykke",
+      "Stenløse",
+      "Smørum",
+      "Ganløse",
+      "Veksø",
+      "Slangerup"
+    ],
+    "alleroed": [
+      "Allerød",
+      "Lillerød",
+      "Blovstrød",
+      "Lynge"
+    ],
+    "rudersdal": [
+      "Holte",
+      "Birkerød",
+      "Søllerød",
+      "Vedbæk",
+      "Nærum",
+      "Skodsborg"
+    ],
+    "hoersholm": [
+      "Hørsholm",
+      "Rungsted Kyst",
+      "Usserød"
+    ],
+    "furesoe": [
+      "Farum",
+      "Værløse",
+      "Kollekolle",
+      "Hareskov"
+    ],
+    "lyngby-taarbaek": [
+      "Kongens Lyngby",
+      "Virum",
+      "Sorgenfri",
+      "Taarbæk",
+      "Lundtofte"
+    ],
+    "gentofte": [
+      "Hellerup",
+      "Gentofte",
+      "Charlottenlund",
+      "Ordrup",
+      "Jægersborg",
+      "Skovshoved",
+      "Dyssegård",
+      "Klampenborg"
+    ]
+  }
+}

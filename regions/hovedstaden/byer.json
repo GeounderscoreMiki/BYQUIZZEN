@@ -1,33 +1,78 @@
 {
   "towns": {
-    "albertslund": ["Albertslund", "Herstedvester", "Herstedøster"],
-    "alleroed": ["Allerød", "Lillerød", "Blovstrød", "Lynge"],
-    "ballerup": ["Ballerup", "Skovlunde", "Måløv", "Malerup"],
-    "bornholm": ["Rønne", "Nexø", "Svaneke", "Allinge", "Gudhjem", "Aakirkeby", "Hasle", "Sandvig"],
-    "broendby": ["Brøndbyvester", "Brøndbyøster", "Brøndby Strand"],
-    "dragoer": ["Dragør", "Store Magleby"],
-    "egedal": ["Ølstykke", "Stenløse", "Smørum", "Ganløse", "Veksø", "Slangerup"],
-    "fredensborg": ["Fredensborg", "Humlebæk", "Kokkedal", "Nivå", "Asminderød"],
-    "frederiksberg": ["Frederiksberg"],
-    "frederikssund": ["Frederikssund", "Jægerspris", "Skibby", "Skuldelev", "Kyndby"],
-    "furesoe": ["Farum", "Værløse", "Kollekolle", "Hareskov"],
-    "gentofte": ["Hellerup", "Gentofte", "Charlottenlund", "Ordrup", "Jægersborg", "Skovshoved", "Dyssegård", "Klampenborg"],
-    "gladsaxe": ["Bagsværd", "Søborg", "Mørkhøj", "Buddinge", "Gladsaxe"],
-    "glostrup": ["Glostrup", "Ejby"],
-    "gribskov": ["Helsinge", "Gilleleje", "Græsted", "Smidstrup", "Ramløse", "Vejby", "Tisvilde"],
-    "halsnaes": ["Hundested", "Frederiksværk", "Liseleje", "Melby", "Halsnæs"],
-    "helsingoer": ["Helsingør", "Snekkersten", "Espergærde", "Hornbæk", "Ålsgårde", "Tikøb"],
-    "herlev": ["Herlev"],
-    "hilleroed": ["Hillerød", "Uvelse", "Favrholm", "Ny Hammersholt"],
-    "hvidovre": ["Hvidovre", "Avedøre", "Strandmarken"],
-    "hoeje-taastrup": ["Taastrup", "Fløng", "Sengeløse", "Hedehusene"],
-    "hoersholm": ["Hørsholm", "Rungsted Kyst", "Usserød"],
-    "ishoej": ["Ishøj"],
-    "koebenhavn": ["København", "Nørrebro", "Østerbro", "Vesterbro", "Valby", "Brønshøj", "Vanløse", "Amager"],
-    "lyngby-taarbaek": ["Kongens Lyngby", "Virum", "Sorgenfri", "Taarbæk", "Lundtofte"],
-    "rudersdal": ["Holte", "Birkerød", "Søllerød", "Vedbæk", "Nærum", "Skodsborg"],
-    "roedovre": ["Rødovre", "Islev"],
-    "taarnby": ["Kastrup", "Tårnby", "Kastrup Lufthavn"],
-    "vallensbaek": ["Vallensbæk", "Vallensbæk Strand"]
+    "albertslund": [
+      "Albertslund",
+      "Herstedvester",
+      "Herstedøster"
+    ],
+    "ballerup": [
+      "Ballerup",
+      "Skovlunde",
+      "Måløv",
+      "Malerup"
+    ],
+    "broendby": [
+      "Brøndbyvester",
+      "Brøndbyøster",
+      "Brøndby Strand"
+    ],
+    "dragoer": [
+      "Dragør",
+      "Store Magleby"
+    ],
+    "frederiksberg": [
+      "Frederiksberg"
+    ],
+    "gladsaxe": [
+      "Bagsværd",
+      "Søborg",
+      "Mørkhøj",
+      "Buddinge",
+      "Gladsaxe"
+    ],
+    "glostrup": [
+      "Glostrup",
+      "Ejby"
+    ],
+    "herlev": [
+      "Herlev"
+    ],
+    "hvidovre": [
+      "Hvidovre",
+      "Avedøre",
+      "Strandmarken"
+    ],
+    "hoeje-taastrup": [
+      "Taastrup",
+      "Fløng",
+      "Sengeløse",
+      "Hedehusene"
+    ],
+    "ishoej": [
+      "Ishøj"
+    ],
+    "koebenhavn": [
+      "København",
+      "Nørrebro",
+      "Østerbro",
+      "Vesterbro",
+      "Valby",
+      "Brønshøj",
+      "Vanløse",
+      "Amager"
+    ],
+    "roedovre": [
+      "Rødovre",
+      "Islev"
+    ],
+    "taarnby": [
+      "Kastrup",
+      "Tårnby",
+      "Kastrup Lufthavn"
+    ],
+    "vallensbaek": [
+      "Vallensbæk",
+      "Vallensbæk Strand"
+    ]
   }
 }
