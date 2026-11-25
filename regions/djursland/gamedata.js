@@ -1,57 +1,78 @@
 // Genereret af tools/build-game.mjs – rediger secret/spil.json og kør scriptet igen.
 export const iterations = 150000;
-export const salt = '9TyMtAH8ctK4zKemIgFn+w==';
+export const salt = 'Qlo6qCV78CaYkOtyYI7q8Q==';
 export const groups = [
   {
     "towns": [
-      "Grenaa"
+      "Grenaa",
+      "Trustrup",
+      "Ålsø",
+      "Albøge"
     ],
-    "check": "PdP5o+/Jh0xrdd4P2cSULaJ/fY65Oh+5DlHg6Uvsbtg="
+    "check": "WmNJwlghAdKYhFlD6lSWHX1kD2B+ne3wfsFOzO+Ru30="
   },
   {
     "towns": [
-      "Bønnerup Strand",
+      "Glesborg",
+      "Gjerrild",
       "Fjellerup",
-      "Gjerrild"
+      "Ørum"
     ],
-    "check": "bglK4oKFtLnM7wfSUQT6g2buyBTjOQUyyF9HpXAXxA8="
+    "check": "N1ckUoM5nwNoccBV2oElQKAvr9uby/tYBpNr1DvHXhQ="
   },
   {
     "towns": [
-      "Allingåbro"
+      "Ørsted",
+      "Vivild",
+      "Nørager",
+      "Hevring"
     ],
-    "check": "5G/Eed2s75bwyCNklqJ1g//d2+vPF70Pu75fg5jxi40="
+    "check": "qI0Xhq0dmIO5oNA4nMqPnshPWd+xNvmL2e8Ok08OsK8="
   },
   {
     "towns": [
-      "Auning"
+      "Auning",
+      "Fausing",
+      "Øster Alling",
+      "Vester Alling"
     ],
-    "check": "2c1HaRTZjCzMwC80cea5MfJJvU4HHuu8bT/nQRV3WCo="
+    "check": "XZgjnO6Gk/yqlW0b215HBn+h1+odwEgVjtzN2kC9qRg="
   },
   {
     "towns": [
       "Ebeltoft",
-      "Femmøller"
+      "Knebel",
+      "Tirstrup",
+      "Tved"
     ],
-    "check": "deK8Fp5ajCTLuxQE0aZdnPp2+ucfGQtmOjA1tOPBewI="
+    "check": "LoG9YVlgTES+c7pCQu/bO30FADfYAXhRXV6BsPkKlhY="
   },
   {
     "towns": [
-      "Ryomgård"
+      "Kolind",
+      "Ryomgård",
+      "Nimtofte",
+      "Koed"
     ],
-    "check": "DtGblY6ai4tq5Xm6KQKPHhUjTCXXU5JEnEIu0BptDP0="
+    "check": "pgFxNPs+ZvuNQakrcI8aC9vvwCg32+1ev+4sh9p7yFE="
   },
   {
     "towns": [
-      "Hornslet"
+      "Hornslet",
+      "Mørke",
+      "Lime",
+      "Hvilsager"
     ],
-    "check": "W7Y0+JS3lEgh3Pr9WB1o4cvo133Dg0JdOco4O3siuxE="
+    "check": "ysO4r66jTCj2oTc8uXn0g+l5owfw+z5yRvGZU7jAdDM="
   },
   {
     "towns": [
-      "Rønde"
+      "Rønde",
+      "Thorsager",
+      "Feldballe",
+      "Ugelbølle"
     ],
-    "check": "MKYXctna5qokng162eOC+N6RwAtjVxpHJzwXNE62IFo="
+    "check": "/wKF56GrDWa6ErvrpyQU9jI330lMPrgY5J4DwrLj2Mw="
   }
 ];
-export const vault = { iv: '70r7w5Pfk/hlgvIQ', data: 'itLCcdj5d7FhfEROTN31vzNaZv5ULM87mnYqIVsjh4UlYxtZs5j9CT6YK9Y2XiZRtl9O4HIXPjX7g0ODG43dwsexZNhxnSyJpfH8Yz6dBjmA' };
+export const vault = { iv: 'vAseqXiez6XaRnw7', data: '7FlCLm8mFN2to0dkf8xSJBTWqrbTaIJGPqwmF81XQbChtdrVWRz9kzHJ0Vhm1D8rNi1AjzB2X6q4yDIgN1tHnURpxVk3IefLlDj81lhpHcPN' };

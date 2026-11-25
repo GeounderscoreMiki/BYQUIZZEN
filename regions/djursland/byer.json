@@ -1,31 +1,52 @@
 {
   "towns": {
     "grenaa": [
-      "Grenaa"
+      "Grenaa",
+      "Trustrup",
+      "Ålsø",
+      "Albøge"
     ],
     "noerre-djurs": [
-      "Bønnerup Strand",
+      "Glesborg",
+      "Gjerrild",
       "Fjellerup",
-      "Gjerrild"
+      "Ørum"
     ],
     "rougsoe": [
-      "Allingåbro"
+      "Ørsted",
+      "Vivild",
+      "Nørager",
+      "Hevring"
     ],
     "soenderhald": [
-      "Auning"
+      "Auning",
+      "Fausing",
+      "Øster Alling",
+      "Vester Alling"
     ],
     "ebeltoft": [
       "Ebeltoft",
-      "Femmøller"
+      "Knebel",
+      "Tirstrup",
+      "Tved"
     ],
     "midtdjurs": [
-      "Ryomgård"
+      "Kolind",
+      "Ryomgård",
+      "Nimtofte",
+      "Koed"
     ],
     "rosenholm": [
-      "Hornslet"
+      "Hornslet",
+      "Mørke",
+      "Lime",
+      "Hvilsager"
     ],
     "roende": [
-      "Rønde"
+      "Rønde",
+      "Thorsager",
+      "Feldballe",
+      "Ugelbølle"
     ]
   }
 }
