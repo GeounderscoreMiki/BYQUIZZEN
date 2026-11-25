@@ -40,12 +40,12 @@ export const images = {
 // Kommunerne: id, navn og DAGI-kommunekode (bruges af tools/build-map.mjs). Rækkefølgen er spørgsmålsgrupperne.
 // Områderne er cirka-områder (tidligere kommuner) tegnet ud fra nærmeste frøpunkt `seeds` [længde, bredde] inden for de officielle kommuner `koder`.
 export const municipalities = [
-  { id: 'grenaa', name: 'Grenaa', koder: ['0707', '0706'], bbox: [9.5, 56.0, 11.2, 56.8], seeds: [10.9, 56.41] },
+  { id: 'grenaa', name: 'Grenaa', koder: ['0707', '0706'], bbox: [9.5, 56.0, 11.2, 56.8], seeds: [10.8, 56.38] },
   { id: 'noerre-djurs', name: 'Nørre Djurs', koder: ['0707', '0706'], bbox: [9.5, 56.0, 11.2, 56.8], seeds: [10.78, 56.5] },
-  { id: 'rougsoe', name: 'Rougsø', koder: ['0707', '0706'], bbox: [9.5, 56.0, 11.2, 56.8], seeds: [10.35, 56.49] },
-  { id: 'soenderhald', name: 'Sønderhald', koder: ['0707', '0706'], bbox: [9.5, 56.0, 11.2, 56.8], seeds: [10.5, 56.42] },
-  { id: 'ebeltoft', name: 'Ebeltoft', koder: ['0707', '0706'], bbox: [9.5, 56.0, 11.2, 56.8], seeds: [10.68, 56.2] },
-  { id: 'midtdjurs', name: 'Midtdjurs', koder: ['0707', '0706'], bbox: [9.5, 56.0, 11.2, 56.8], seeds: [10.62, 56.35] },
-  { id: 'rosenholm', name: 'Rosenholm', koder: ['0707', '0706'], bbox: [9.5, 56.0, 11.2, 56.8], seeds: [10.33, 56.31] },
-  { id: 'roende', name: 'Rønde', koder: ['0707', '0706'], bbox: [9.5, 56.0, 11.2, 56.8], seeds: [10.48, 56.29] },
+  { id: 'rougsoe', name: 'Rougsø', koder: ['0707', '0706'], bbox: [9.5, 56.0, 11.2, 56.8], seeds: [10.45, 56.5] },
+  { id: 'soenderhald', name: 'Sønderhald', koder: ['0707', '0706'], bbox: [9.5, 56.0, 11.2, 56.8], seeds: [10.42, 56.39] },
+  { id: 'ebeltoft', name: 'Ebeltoft', koder: ['0707', '0706'], bbox: [9.5, 56.0, 11.2, 56.8], seeds: [10.66, 56.27] },
+  { id: 'midtdjurs', name: 'Midtdjurs', koder: ['0707', '0706'], bbox: [9.5, 56.0, 11.2, 56.8], seeds: [10.6, 56.35] },
+  { id: 'rosenholm', name: 'Rosenholm', koder: ['0707', '0706'], bbox: [9.5, 56.0, 11.2, 56.8], seeds: [10.33, 56.35] },
+  { id: 'roende', name: 'Rønde', koder: ['0707', '0706'], bbox: [9.5, 56.0, 11.2, 56.8], seeds: [10.46, 56.3] },
 ];
