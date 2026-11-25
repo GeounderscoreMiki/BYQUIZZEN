@@ -2,6 +2,7 @@
 // Læser kommunekoderne i regions/<landsdel>/config.js og laver regions/<landsdel>/mapdata.js
 // ud fra DAGI-kommunegrænserne i data/kommuner.geojson (ok-dk/dagi).
 import { readFileSync, writeFileSync } from 'node:fs';
+import polygonClipping from 'polygon-clipping'; // kun nødvendig for områder med `seeds` (npm install)
 
 const slug = process.argv[2];
 if (!slug) { console.error('Brug: node tools/build-map.mjs <landsdel>'); process.exit(1); }
@@ -17,15 +18,43 @@ const PALETTE = ['#e6194b', '#3cb44b', '#ffe119', '#4363d8', '#f58231', '#911eb4
   '#bcf60c', '#fabebe', '#008080', '#e6beff', '#9a6324', '#fffac8', '#aaffc3', '#808000'];
 
 // Samler polygoner pr. kommune (DAGI har én feature pr. polygon-del).
-const polys = Object.fromEntries(municipalities.map((m) => [m.kode, []]));
+// Valgfrit: et område kan i config have `seeds: [lng, lat]` (og evt. `koder: [...]` i stedet for `kode`).
+// Så deles moderkommunen(erne) i cirka-områder ud fra nærmeste frøpunkt (Voronoi) – fx tidligere kommuner.
+const parentCodes = (m) => m.koder || [m.kode];
+const dagi = {};
 for (const f of geo.features) {
-  const code = f.properties.KOMKODE;
-  if (!polys[code]) continue;
   const parts = f.geometry.type === 'Polygon' ? [f.geometry.coordinates] : f.geometry.coordinates;
-  polys[code].push(...parts);
+  (dagi[f.properties.KOMKODE] ||= []).push(...parts);
 }
+const COSLAT = Math.cos(56 * Math.PI / 180); // kun brugt til afstande ved opdeling
+const clipHalf = (ring, a, b) => {
+  // Behold den del af ringen, der ligger tættest på frøpunkt a (frem for b).
+  const C = COSLAT * COSLAT;
+  const f = ([x, y]) => 2 * (b[0] - a[0]) * C * x + 2 * (b[1] - a[1]) * y - ((b[0] * b[0] - a[0] * a[0]) * C + (b[1] * b[1] - a[1] * a[1]));
+  const out = [];
+  for (let i = 0; i < ring.length - 1; i++) {
+    const p = ring[i], q = ring[i + 1], fp = f(p), fq = f(q);
+    if (fp <= 0) out.push(p);
+    if ((fp < 0 && fq > 0) || (fp > 0 && fq < 0)) { const t = fp / (fp - fq); out.push([p[0] + t * (q[0] - p[0]), p[1] + t * (q[1] - p[1])]); }
+  }
+  if (out.length) out.push(out[0]);
+  return out;
+};
+const polys = {};
 for (const m of municipalities) {
-  if (!polys[m.kode].length) throw new Error(`Kommunekode ${m.kode} (${m.name}) findes ikke i DAGI-data`);
+  const parts = parentCodes(m).flatMap((c) => {
+    if (!dagi[c]) throw new Error(`Kommunekode ${c} (${m.name}) findes ikke i DAGI-data`);
+    return dagi[c];
+  });
+  if (!m.seeds) { polys[m.id] = parts; continue; }
+  const others = municipalities.filter((o) => o !== m && o.seeds && parentCodes(o).join() === parentCodes(m).join());
+  // Cellen er et konvekst område (rektangel skåret af midtnormaler mod de andre frøpunkter) og skæres med moderkommunen.
+  let cell = [[0, 40], [30, 40], [30, 70], [0, 70], [0, 40]];
+  for (const o of others) cell = clipHalf(cell, m.seeds, o.seeds);
+  const inBox = (rings) => !m.bbox || (rings[0][0][0] >= m.bbox[0] && rings[0][0][0] <= m.bbox[2] && rings[0][0][1] >= m.bbox[1] && rings[0][0][1] <= m.bbox[3]);
+  const parent = parts.filter(inBox).map((rings) => rings.map((r) => r.map(([x, y]) => [x, y])));
+  polys[m.id] = polygonClipping.intersection(parent, [cell]);
+  if (!polys[m.id].length) throw new Error(`${m.name}: frøpunktet ligger uden for moderkommunen`);
 }
 
 // Fælles projektion (equirektangulær med cos(bredde)), så alle kommuner passer sammen.
@@ -100,7 +129,7 @@ function labelPoint(rings) {
 }
 
 const regions = municipalities.map((m, i) => {
-  const parts = polys[m.kode]
+  const parts = polys[m.id]
     .map((rings) => rings.map((r) => simplify(r.map(project), TOLERANCE)).filter((r) => r.length >= 4))
     .filter((rings) => rings.length && Math.abs(area(rings[0])) >= MIN_AREA);
   const d = parts.map((rings) => rings.map((r) => `M${r.map(([x, y]) => `${fmt(x)} ${fmt(y)}`).join('L')}Z`).join('')).join('');

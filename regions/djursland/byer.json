@@ -1,0 +1,36 @@
+{
+  "towns": {
+    "grenaa": [
+      "Grenaa",
+      "Bønnerup Strand"
+    ],
+    "noerre-djurs": [
+      "Gjerrild",
+      "Fjellerup"
+    ],
+    "rougsoe": [
+      "Allingåbro",
+      "Glesborg"
+    ],
+    "soenderhald": [
+      "Auning",
+      "Ørsted"
+    ],
+    "ebeltoft": [
+      "Ebeltoft",
+      "Femmøller"
+    ],
+    "midtdjurs": [
+      "Ryomgård",
+      "Kolind"
+    ],
+    "rosenholm": [
+      "Hornslet",
+      "Mørke"
+    ],
+    "roende": [
+      "Rønde",
+      "Knebel"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "type": "module",
+  "description": "Kun værktøjer til at bygge kort og spildata (tools/). Selve spillene bruger ingen pakker.",
+  "devDependencies": {
+    "polygon-clipping": "^0.15.7"
+  }
+}

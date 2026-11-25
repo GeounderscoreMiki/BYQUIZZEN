@@ -1,0 +1,30 @@
+{
+  "towns": {
+    "roenne": [
+      "Rønne",
+      "Knudsker"
+    ],
+    "hasle": [
+      "Hasle",
+      "Rutsker"
+    ],
+    "allinge-gudhjem": [
+      "Allinge",
+      "Sandvig",
+      "Gudhjem",
+      "Tejn",
+      "Olsker"
+    ],
+    "aakirkeby": [
+      "Aakirkeby",
+      "Pedersker",
+      "Nylars"
+    ],
+    "nexoe": [
+      "Nexø",
+      "Svaneke",
+      "Snogebæk",
+      "Dueodde"
+    ]
+  }
+}

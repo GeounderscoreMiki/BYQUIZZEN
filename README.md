@@ -36,3 +36,6 @@ Udfyld derefter `municipalities` i `config.js` (id, navn, DAGI-kommunekode), `by
 
 ## Bemærk
 Der er ingen server, så en erfaren programmør kan i teorien læse sig til koordinatet. Det stopper almindelig snyd, men er ikke 100 % sikkert.
+
+## Cirka-områder (tidligere kommuner)
+Hvor en landsdel kun har få kommuner (Bornholm, Djursland), kan den deles i cirka-områder: i `config.js` angives `koder` (de officielle kommuner) og `seeds: [længde, bredde]` pr. område. Kortet tegnes ud fra nærmeste frøpunkt. Kør `npm install` én gang, før `tools/build-map.mjs` bruges til sådanne områder. `bbox` kan fjerne fjerntliggende øer (fx Anholt).
