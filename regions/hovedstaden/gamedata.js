@@ -14,8 +14,7 @@ export const groups = [
     "towns": [
       "Ballerup",
       "Skovlunde",
-      "Måløv",
-      "Malerup"
+      "Måløv"
     ],
     "check": "tXFEddKchjgHHHqxUOurKT4qqrymv1s6X4rmfxCzfYA="
   },
@@ -94,8 +93,7 @@ export const groups = [
       "Vesterbro",
       "Valby",
       "Brønshøj",
-      "Vanløse",
-      "Amager"
+      "Vanløse"
     ],
     "check": "rxPxGGt3XBuvvwhCGaaglpLjAtIxxijcSFONKY/dAhQ="
   },
@@ -109,8 +107,7 @@ export const groups = [
   {
     "towns": [
       "Kastrup",
-      "Tårnby",
-      "Kastrup Lufthavn"
+      "Tårnby"
     ],
     "check": "7lcdqCB15qfm7WsZV6baM2XCrjpVR5z+Jtuk62igV8I="
   },
