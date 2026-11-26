@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Skift finalkoordinat</title>
+<style>
+  body { font: 16px/1.5 system-ui, sans-serif; max-width: 640px; margin: 0 auto; padding: 16px; background: #14202b; color: #fff; }
+  select, input, button, a.btn { font: inherit; width: 100%; box-sizing: border-box; padding: 10px; margin: 6px 0 14px; border-radius: 8px; border: 0; }
+  button, a.btn { background: #5ec8ff; color: #06202e; font-weight: 700; text-align: center; text-decoration: none; display: block; cursor: pointer; margin-bottom: 10px; }
+  #out { font-size: 14px; background: #0b141c; padding: 10px; border-radius: 8px; }
+  .ok { color: #7dffa0; } .err { color: #ff8a8a; } small { opacity: .75; }
+</style>
+</head>
+<body>
+<h1>Skift finalkoordinat</h1>
+<p><small>Koordinatet krypteres i din browser og sendes ingen steder. Resultatet er en ny <code>gamedata.js</code>, som du selv uploader til GitHub.</small></p>
+
+<label for="region">Landsdel</label>
+<select id="region"></select>
+
+<label for="coord">Nyt finalkoordinat</label>
+<input id="coord" placeholder="N 55° 12.345 E 010° 12.345" autocomplete="off">
+
+<button id="go">Lav ny gamedata.js</button>
+<div id="out"></div>
+<a class="btn" id="dl" hidden>Download gamedata.js</a>
+<a class="btn" id="up" hidden target="_blank" rel="noopener">Åbn upload-siden på GitHub</a>
+
+<script type="module">
+const slugs = ['bornholm', 'djursland', 'fyn', 'hovedstaden', 'midtjylland', 'nordjylland', 'nordsjaelland', 'oestsjaelland', 'soenderjylland', 'sydsjaelland', 'vestsjaelland'];
+const $ = (id) => document.getElementById(id);
+const out = $('out');
+const sel = $('region');
+for (const s of slugs) {
+  const cfg = await import(`./regions/${s}/config.js`);
+  sel.add(new Option(cfg.regionName, s));
+}
+
+const b64 = (buf) => btoa(String.fromCharCode(...new Uint8Array(buf)));
+const fromB64 = (s) => Uint8Array.from(atob(s), (c) => c.charCodeAt(0));
+const say = (msg, cls = '') => { out.className = cls; out.textContent = msg; };
+
+$('go').onclick = async () => {
+  const slug = sel.value, coord = $('coord').value.trim();
+  $('dl').hidden = $('up').hidden = true;
+  if (!coord) return say('Skriv et koordinat først.', 'err');
+  try {
+    say('Arbejder …');
+    const cfg = await import(`./regions/${slug}/config.js?${Date.now()}`);
+    const game = await import(`./regions/${slug}/gamedata.js?${Date.now()}`);
+    const ids = cfg.municipalities.map((m) => m.id);
+    const base = await crypto.subtle.importKey('raw', new TextEncoder().encode([...ids].sort().join('|')), 'PBKDF2', false, ['deriveBits']);
+    const bits = await crypto.subtle.deriveBits({ name: 'PBKDF2', salt: fromB64(game.salt), iterations: game.iterations, hash: 'SHA-256' }, base, 256);
+    const key = await crypto.subtle.importKey('raw', bits, 'AES-GCM', false, ['encrypt', 'decrypt']);
+    const iv = crypto.getRandomValues(new Uint8Array(12));
+    const data = await crypto.subtle.encrypt({ name: 'AES-GCM', iv }, key, new TextEncoder().encode(coord));
+
+    // Kontrol: det nye vault skal kunne åbnes igen, før filen udleveres.
+    const back = await crypto.subtle.decrypt({ name: 'AES-GCM', iv }, key, data);
+    if (new TextDecoder().decode(back) !== coord) throw new Error('Kontrol fejlede');
+
+    const text = `// Genereret af tools/build-game.mjs – rediger secret/spil.json og kør scriptet igen.
+export const iterations = ${game.iterations};
+export const salt = '${game.salt}';
+export const groups = ${JSON.stringify(game.groups, null, 2)};
+export const vault = { iv: '${b64(iv)}', data: '${b64(data)}' };
+`;
+    $('dl').href = URL.createObjectURL(new Blob([text], { type: 'text/javascript' }));
+    $('dl').download = 'gamedata.js';
+    $('up').href = `https://github.com/GeounderscoreMiki/BYQUIZZEN/upload/main/regions/${slug}`;
+    $('dl').hidden = $('up').hidden = false;
+    say(`Klar til ${cfg.regionName}: download filen og upload den som gamedata.js i regions/${slug}.`, 'ok');
+  } catch (e) {
+    say(`Fejl: ${e.message}`, 'err');
+  }
+};
+</script>
+</body>
+</html>

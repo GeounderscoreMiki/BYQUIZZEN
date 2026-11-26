@@ -25,6 +25,9 @@ data/kommuner.geojson       DAGI-kommunegrænser (ok-dk/dagi)
 3. `node tools/build-rules.mjs`, og indsæt `firestore.rules` i Firebase → Firestore → Rules → Publish. Filen indeholder de gamle spils regler uændret. Nordjylland bruger egne samlinger `nj_scores` og `nj_stats`.
 4. GitHub Pages: upload alt undtagen `secret/` (gitignored); slå Pages til (`main` / root). Spillet ligger på `/regions/nordjylland/`.
 
+## Skift finalkoordinat uden værktøjer
+Åbn `koordinat.html` (fx https://geounderscoremiki.github.io/BYQUIZZEN/koordinat.html), vælg landsdel, skriv koordinatet, download den nye `gamedata.js` og upload den til `regions/<landsdel>/`. Krypteringen sker i browseren, og byer og svar-hashes bevares.
+
 ## Ny landsdel
 ```
 node tools/new-region.mjs vestsjaelland "Hvor i Vestsjælland?" "Vestsjælland" vsj
